@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #fff9fb;
+    color: #49343e;
+}
+
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #f2dce5;
+    padding: 20px 8%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    color: #a94f72;
+    font-size: 28px;
+}
+
+.logo span {
+    color: #d99ab1;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #765464;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #c46d91;
+}
+
+.inicio {
+    min-height: 510px;
+    padding: 90px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 45px;
+    background: linear-gradient(120deg, #fceaf1, #fff8fb);
+}
+
+.inicio-texto {
+    max-width: 590px;
+}
+
+.subtitulo {
+    color: #b66a87;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+.inicio h1 {
+    font-size: 55px;
+    color: #513543;
+    margin-bottom: 10px;
+}
+
+.inicio h1 span {
+    color: #b65d80;
+}
+
+.inicio h2 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 18px;
+}
+
+.inicio p {
+    line-height: 1.8;
+    color: #765d69;
+}
+
+.botao {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 13px 24px;
+    background-color: #b96887;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #944765;
+    transform: translateY(-3px);
+}
+
+.decoracao {
+    text-align: center;
+}
+
+.circulo {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #e9b4c7, #c77c9b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border: 10px solid #fff;
+    box-shadow: 0 10px 35px #d9a6b8;
+}
+
+.circulo span {
+    font-family: 'Playfair Display', serif;
+    font-size: 100px;
+    color: white;
+}
+
+.decoracao p {
+    margin-top: 20px;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.secao {
+    padding: 75px 12%;
+}
+
+.secao h2 {
+    font-size: 34px;
+    color: #704457;
+    margin-bottom: 28px;
+}
+
+.cartao {
+    background-color: white;
+    border: 1px solid #f0dce5;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(153, 91, 116, 0.06);
+    line-height: 1.9;
+}
+
+.cartao p + p {
+    margin-top: 15px;
+}
+
+.cartao h3,
+.item h3 {
+    font-family: 'Playfair Display', serif;
+    color: #a65376;
+    font-size: 21px;
+    margin-bottom: 8px;
+}
+
+.etiqueta {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 5px 13px;
+    background-color: #fceaf1;
+    color: #a65376;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.grade {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.item {
+    padding: 25px;
+    background-color: #fff0f5;
+    border-radius: 15px;
+    border-left: 4px solid #c77c9b;
+}
+
+.item p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #765d69;
+}
+
+.objetivos {
+    background-color: #fceef3;
+}
+
+.contato {
+    padding-bottom: 90px;
+}
+
+footer {
+    background-color: #75475c;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    font-size: 12px;
+    line-height: 2;
+}
+
+@media (max-width: 700px) {
+    .navbar {
+        justify-content: center;
+    }
+
+    .navbar ul {
+        justify-content: center;
+        gap: 13px;
+    }
+
+    .inicio {
+        flex-direction: column;
+        text-align: center;
+        padding: 65px 8%;
+    }
+
+    .inicio h1 {
+        font-size: 40px;
+    }
+
+    .circulo {
+        width: 170px;
+        height: 170px;
+    }
+
+    .circulo span {
+        font-size: 75px;
+    }
+
+    .secao {
+        padding: 55px 8%;
+    }
+
+    .grade {
+        grid-template-columns: 1fr;
+    }
+}
